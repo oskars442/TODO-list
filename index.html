@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+
+    <title>Todo list</title>
+</head>
+
+<body onload="startTime()">
+    <div class="conteiner">
+        <h1><span class="style">TODO</span> saraksts</h1>
+        <div id="date"></div>
+   <br>
+
+    <header id="mainDiv">
+        <input type="text" id="main" placeholder="izveidot jaunu TODO ....">
+        <span onclick="newElement()" class="addBtn">Pievienot</span>
+    </header>
+
+    <ul id="myUL">
+        <li>Complete weather app</li>
+        <li >Upgrade last exercises</li>
+        <li>learn javascript</li>
+        <li>find new projects on javacript</li>
+        <li class="checked">complete TODO list</li>
+        <li>delete me</li>
+          <button class="delete" onclick="deketeAll()"><i>
+                  <!--class="fas fa-trash-alt"--></i>Izdzēst visu</button>
+
+    </ul>
+
+  
+ </div>
+   <!-- <script src="https://kit.fontawesome.com/8dec7a39cd.js" crossorigin="anonymous"></script>-->
+    </head>
+    <script src="main.js"></script>
+</body>
+
+</html>
